@@ -14,8 +14,8 @@
 /************************ Program Starts Here *******************************/
 
 // Variables
-int x;
-int y;
+int x = 0;
+int y = 0;
 
 // Adafruit Feeds
 AdafruitIO_Feed *pressure = io.feed("pressure");
@@ -24,8 +24,8 @@ AdafruitIO_Feed *altitude = io.feed("altitude");
 void sendSensor()
 {
 
-  x = 1;
-  y = 2;
+  x++;
+  y++;
   
   pressure->save(p);
   delay(2000);
