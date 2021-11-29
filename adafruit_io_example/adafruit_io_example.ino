@@ -71,6 +71,6 @@ void loop() {
   // Adafruit IO is rate limited for publishing, so a delay is required in
   // between feed->save events. 
   sendSensor();
-  delay(5000);
+  delay(2000);
 
 }
