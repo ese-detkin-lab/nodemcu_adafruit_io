@@ -25,11 +25,11 @@ void sendSensor()
 {
 
   x++;
-  y++;
+  y += 2;
   
-  pressure->save(p);
+  pressure->save(x);
   delay(2000);
-  altitude->save(a);
+  altitude->save(y);
 }
 
 
