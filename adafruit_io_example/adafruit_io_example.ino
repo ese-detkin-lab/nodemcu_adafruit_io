@@ -18,6 +18,7 @@ int x = 0;
 int y = 0;
 
 // Adafruit Feeds
+// Change "pressure" and "altitude" to fit your application.
 AdafruitIO_Feed *pressure = io.feed("pressure");
 AdafruitIO_Feed *altitude = io.feed("altitude");
 
