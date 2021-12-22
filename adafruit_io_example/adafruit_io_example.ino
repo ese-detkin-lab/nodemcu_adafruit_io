@@ -14,6 +14,8 @@
 // Variables
 int x = 0;
 int y = 0;
+int photo_cell_pin = 0;
+int photo_cell_reading;
 
 // Adafruit Feeds
 // Change "pressure" and "altitude" to fit your application.
@@ -24,11 +26,11 @@ void sendSensor()
 {
 
   x++;
-  y += 2;
-  
+  //y += 2;
+  photo_cell_reading = analogRead(photo_cell_pin);
   pressure->save(x);
   delay(2000);
-  altitude->save(y);
+  altitude->save(photo_cell_reading);
 }
 
 
